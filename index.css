@@ -1,8 +1,18 @@
 h1{
   font-weight: 400;
+  background-color: black;
+  text-align: center;
   color: red;
 }
+br{
+  background-color: black;
+}
 h2{
+  text-align: center;
+  background-color: black;
   font-style: italic;
   color: pink;
+}
+body{
+  background-image:url(http://audi4addict.com/wp-content/uploads/2012/09/Mango-wall-1280x720.jpg);
 }
