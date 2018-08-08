@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+#canvas{
+  color: #FFFFFF;
+  background: #96281B;
+  height: 540px;
+  width: 540px;
+  margin: auto;
+}
+.box{
+  width: 180px;
+  height: 180px;
+  border: 1px solid black;
+  float: left;
+  text-align: center;
+  font-size: 40px;
+}
