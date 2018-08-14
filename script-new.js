@@ -92,14 +92,20 @@ for (var i = 0; i < imgTag.length; i++) {
 
 // FUNGSI UNTUK MENGECEK KONDISI KEMENANGAN
 function winCondition() {
-  var checkCondition = false;
+  var arrayCheckCondition = [];
+  var ch
   for (var i = 0; i < boardImg.length; i++) {
-    if (boardImg[i] === h_elem[i].attributes.src.nodeValue) {
-      checkCondition = true;
-      return checkCondition;
+    if (board[i] === h_elem[i].attributes.src.nodeValue) {
+      arrayCheckCondition.push(true);
     } else {
-      checkCondition = false;
-      return checkCondition;
+      arrayCheckCondition.push(false);
+    }
+  }
+  for (var i = 0; i < arrayCheckCondition.length; i++) {
+    if (arrayCheckCondition[i] !== true) {
+      console.log(false);
+    }else {
+      console.log(true);
     }
   }
 }
@@ -253,4 +259,8 @@ function bodyOnKeyDown (event) {
       divPosition = divPosition - 1;
     }
   }
+}
+
+function surrender(event) {
+  event.default();
 }
