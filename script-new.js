@@ -93,7 +93,8 @@ for (var i = 0; i < imgTag.length; i++) {
 // FUNGSI UNTUK MENGECEK KONDISI KEMENANGAN
 function winCondition() {
   var arrayCheckCondition = [];
-  var ch
+  var numberWinCondition = 9;
+  var checkCondition = 0;
   for (var i = 0; i < boardImg.length; i++) {
     if (board[i] === h_elem[i].attributes.src.nodeValue) {
       arrayCheckCondition.push(true);
@@ -103,10 +104,13 @@ function winCondition() {
   }
   for (var i = 0; i < arrayCheckCondition.length; i++) {
     if (arrayCheckCondition[i] !== true) {
-      console.log(false);
+      checkCondition = checkCondition;
     }else {
-      console.log(true);
+      checkCondition = checkCondition + 1;
     }
+  }
+  if (checkCondition === numberWinCondition) {
+    alert('Anda telah menang');
   }
 }
 // console.log(h_elem[0].attributes.src.nodeValue);
