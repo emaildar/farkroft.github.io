@@ -111,6 +111,7 @@ function winCondition() {
   }
   if (checkCondition === numberWinCondition) {
     alert('Anda telah menang');
+    // when button ok on alert click, page will refresh
     window.location.reload();
   }
 }
