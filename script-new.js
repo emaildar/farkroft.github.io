@@ -264,7 +264,3 @@ function bodyOnKeyDown (event) {
     }
   }
 }
-
-function surrender(event) {
-  event.default();
-}
