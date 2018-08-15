@@ -1,6 +1,6 @@
-var boardImg = ['','cut_images/image_part_001.jpg','cut_images/image_part_002.jpg','cut_images/image_part_003.jpg'
-,'cut_images/image_part_004.jpg','cut_images/image_part_005.jpg','cut_images/image_part_006.jpg','cut_images/image_part_007.jpg'
-,'cut_images/image_part_008.jpg'];
+var boardImg = ['cut_images/image_part_001.png','cut_images/image_part_002.png','cut_images/image_part_003.png'
+,'cut_images/image_part_004.png','cut_images/image_part_005.png','cut_images/image_part_006.png','cut_images/image_part_007.png'
+,'cut_images/image_part_008.png',''];
 var board = [];
 
 for (var i = 0; i < boardImg.length; i++) {
@@ -151,115 +151,115 @@ function bodyOnKeyDown (event) {
   if (divPosition === 0) {
     if (event.key === 'ArrowRight') {
         keyArrowRight();
-        console.log(winCondition());
+        winCondition();
         divPosition = divPosition + 1;
     }else if (event.key === 'ArrowDown') {
         keyArrowDown();
-        console.log(winCondition());
+        winCondition();
         divPosition = divPosition + 3;
     }
   }else if (divPosition === 1) {
     if (event.key === 'ArrowRight') {
         keyArrowRight();
-        console.log(winCondition());
+        winCondition();
         divPosition = divPosition + 1;
     }else if (event.key === 'ArrowDown') {
       keyArrowDown();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 3;
     }else if (event.key === 'ArrowLeft') {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }
   }else if (divPosition === 2) {
     if (event.key === 'ArrowLeft') {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }else if (event.key === 'ArrowDown') {
       keyArrowDown();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 3;
     }
   }else if (divPosition === 3) {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowRight') {
       keyArrowRight();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 1;
     }else if (event.key === 'ArrowDown') {
       keyArrowDown();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 3;
     }
   }else if (divPosition === 4) {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowRight') {
       keyArrowRight();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 1;
     }else if (event.key === 'ArrowDown') {
       keyArrowDown();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 3;
     }else {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }
   }else if (divPosition === 5) {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowDown') {
       keyArrowDown();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 3;
     }else if (event.key === 'ArrowLeft') {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }
   }else if (divPosition === 6) {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowRight') {
       keyArrowRight();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 1;
     }
   }else if (divPosition === 7) {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowLeft') {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }else if (event.key === 'ArrowRight') {
       keyArrowRight();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition + 1;
     }
   }else {
     if (event.key === 'ArrowUp') {
       keyArrowUp();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 3;
     }else if (event.key === 'ArrowLeft') {
       keyArrowLeft();
-      console.log(winCondition());
+      winCondition();
       divPosition = divPosition - 1;
     }
   }
