@@ -8,6 +8,7 @@
   width: 540px;
   margin: auto;
   float: left;
+  align-content: center;
 }
 .box{
   width: 180px;
@@ -20,4 +21,5 @@
 #rightCanvas{
   margin: auto;
   float: right;
+  align-content: center;
 }

@@ -111,6 +111,7 @@ function winCondition() {
   }
   if (checkCondition === numberWinCondition) {
     alert('Anda telah menang');
+    window.location.reload();
   }
 }
 // console.log(h_elem[0].attributes.src.nodeValue);
